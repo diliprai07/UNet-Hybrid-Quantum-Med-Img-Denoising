@@ -235,10 +235,10 @@ def r1_penalty(real_pred, real_img, lambda_gp=1.0):
 # ========================
 def train():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    train_path = os.path.join(base_dir, "train_split/train_split")
-    val_path   = os.path.join(base_dir, "valid_train/valid_train")
-    save_dir   = os.path.join(base_dir, "16quantum_ckptv4")
-    result_dir = os.path.join(base_dir, "16quantum_resultsv4")
+    train_path = os.path.abspath(os.path.join(base_dir, "..", "..", "Dataset", "train_split"))
+    val_path   = os.path.abspath(os.path.join(base_dir, "..", "..", "Dataset", "valid_train"))
+    save_dir   = os.path.join(base_dir, "16quantum_4qubit_ckpt")
+    result_dir = os.path.join(base_dir, "16quantum_4qubit_results")
     os.makedirs(save_dir, exist_ok=True)
     os.makedirs(result_dir, exist_ok=True)
 

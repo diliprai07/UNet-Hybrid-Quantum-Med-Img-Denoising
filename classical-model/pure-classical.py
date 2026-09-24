@@ -182,8 +182,8 @@ def train():
 
 
 
-    train_path = os.path.join(base_dir, "train_split/train_split")
-    val_path   = os.path.join(base_dir, "valid_train/valid_train")
+    train_path = os.path.abspath(os.path.join(base_dir, "..", "Dataset", "train_split"))
+    val_path   = os.path.abspath(os.path.join(base_dir, "..", "Dataset", "valid_train"))
     
     save_dir   = os.path.join(base_dir, "classical_bottleneck_ckpt")  # Different name for classical version
     result_dir = os.path.join(base_dir, "classical_bottleneck_results")
