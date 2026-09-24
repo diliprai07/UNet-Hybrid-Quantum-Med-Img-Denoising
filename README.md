@@ -65,7 +65,7 @@ python -m venv venv
 # Activate (CMD)
 venv\Scripts\activate.bat
 ```
-The repository already contains a `venv/` folder you can reuse, but recreating ensures a clean state.
+# Decompress the tar files of Dataset
 
 ### 4. Install Dependencies
 ```bash
@@ -77,6 +77,7 @@ Key packages include:
 - `pytorch‑quantum` (or the quantum SDK used by the paper)
 - `scikit‑image`, `numpy`, `matplotlib`, `bm3d`
 - `tqdm`, `json`, `os`, `pathlib`
+- `pennylane` (python package for quantum simulations and hybrid quantum-classical computations)
 
 ### 5. Verify the Dataset Layout
 The folder `Dataset/` must contain three sub‑folders:

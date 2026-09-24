@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+Dataset/** filter=lfs diff=lfs merge=lfs -text
 hybrid-quantum-models/**/*.pth filter=lfs diff=lfs merge=lfs -text
